@@ -1,0 +1,25 @@
+### datasource1
+spring:
+  thymeleaf:
+    #前缀
+    prefix: classpath:/templates/Login/
+    #检测用户模板文件是否存在
+    check-template-localtion: true
+    #是否设置缓存
+    cache: false
+    #后缀
+    suffix: html
+    #字符集编码和文件类型
+    encoding: UTF-8
+    content-type: text/html
+    #页面模式
+    mode: HTML5
+
+### 配置 数据库的信息
+### 属性是默认读取，也就是固定格式
+spring:
+  datasource:
+    url: jdbc:mysql:///shiro
+    username: root
+    password:
+    driver-class-name: com.mysql.jdbc.Driver
